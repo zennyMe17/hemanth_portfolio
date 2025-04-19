@@ -244,7 +244,7 @@ Contributed to the foundational aspects of an innovative online AI interview pla
                 <Badge variant="secondary" className={getBadgeClasses('green')}>NodeJS</Badge>
                 <Badge variant="secondary" className={getBadgeClasses('purple')}>ExpressJS</Badge>
                 <Badge variant="secondary" className={getBadgeClasses('yellow')}>MongoDB</Badge>
-                <Badge variant="secondary" className={getBadgeClasses('indigo')}>Web Scraping</Badge>
+                <Badge variant="secondary" className={getBadgeClasses('blue')}>Web Scraping</Badge>
               </div>
               <p className={getThemeClasses('text-sm text-gray-400', 'text-sm text-gray-600')}>(December `24)</p>
             </div>
@@ -266,7 +266,7 @@ Contributed to the foundational aspects of an innovative online AI interview pla
                 <Badge variant="secondary" className={getBadgeClasses('green')}>NodeJS</Badge>
                 <Badge variant="secondary" className={getBadgeClasses('yellow')}>MongoDB</Badge>
                 <Badge variant="secondary" className={getBadgeClasses('purple')}>ExpressJS</Badge>
-                <Badge variant="secondary" className={getBadgeClasses('teal')}>TailwindCSS</Badge>
+                <Badge variant="secondary" className={getBadgeClasses('blue')}>TailwindCSS</Badge>
               </div>
               <p className={getThemeClasses('text-sm text-gray-400', 'text-sm text-gray-600')}>(November `24)</p>
             </div>

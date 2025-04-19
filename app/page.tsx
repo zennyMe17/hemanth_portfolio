@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Github, Linkedin, Mail, Phone, File, Sun, Moon } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'; // Assuming CardFooter is also available
 
@@ -162,7 +161,7 @@ const HemanthSWebsite = () => {
           </CardContent>
         </Card>
 
-        {/* Experience Section */}
+{/* Experience Section */}
         <Card className={`${getThemeClasses('bg-white/5 border border-white/10 shadow-xl hover:shadow-purple-500/20', 'bg-white/50 border border-gray-200 shadow-lg hover:shadow-purple-200')} backdrop-blur-lg transition-all duration-300 max-w-5xl mx-auto`}>
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-purple-300 text-center">Experience</CardTitle>
@@ -171,24 +170,15 @@ const HemanthSWebsite = () => {
 
             {/* Ethicra Experience */}
             <div className="space-y-4">
-              {/* Image for Ethicra */}
-              <div className="w-40 h-40 bg-gray-700/30 rounded-lg flex items-center justify-center text-gray-400 text-sm italic mx-auto overflow-hidden relative">
-                <Image
-                  src="/images/ethicra.png"
-                  alt="Ethicra"
-                  fill
-                  className="object-contain rounded-md"
-                />
-              </div>
               <h3 className={`text-center ${getThemeClasses('text-xl font-semibold text-gray-200', 'text-xl font-semibold text-gray-800')}`}>
                 Project Intern -{' '}
                 <Link href="https://ethicra.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline inline-flex items-center">
                   Website
                 </Link>{' '}
-                (Ethicra: New Era of Ethical Hiring)
+                (Ethicra: New Era of Ethical Hiring - Online AI Interview Platform)
               </h3>
               <p className={`text-center ${getThemeClasses('text-gray-300', 'text-gray-700')}`}>
-                Worked with a team to develop a platform that streamlines the recruitment process by automating resume processing, screening, and interview scheduling...
+                Contributed to the development of an innovative online AI interview platform focused on ethical hiring practices. My responsibilities included enhancing the automated resume parsing and candidate screening modules using Natural Language Processing (NLP) and Deep Learning techniques. I also played a key role in designing and implementing the AI-driven interview analysis features, which provided comprehensive reports on candidate suitability based on their responses and behavioral cues. This involved working with large datasets and optimizing algorithms for efficiency and accuracy.
               </p>
               <div className="text-sm mt-2 flex flex-wrap gap-2 justify-center items-center">
                 <span className={`font-semibold ${getThemeClasses('text-gray-300', 'text-gray-700')}`}>Tech:</span>{' '}
@@ -202,24 +192,15 @@ const HemanthSWebsite = () => {
 
             {/* Finathon Experience */}
             <div className="space-y-4">
-              {/* Image for Agri-Mitra */}
-              <div className="w-40 h-40 bg-gray-700/30 rounded-lg flex items-center justify-center text-gray-400 text-sm italic mx-auto overflow-hidden relative">
-                <Image
-                  src="/images/agri-mitra.png"
-                  alt="Agri Mitra"
-                  fill
-                  className="object-contain rounded-md"
-                />
-              </div>
               <h3 className={`text-center ${getThemeClasses('text-xl font-semibold text-gray-200', 'text-xl font-semibold text-gray-800')}`}>
                 Finathon -{' '}
                 <Link href="https://agri-mitra-mu.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline inline-flex items-center">
                   Website
                 </Link>{' '}
-                (Puttannaiah Foundation & PES Mandya)
+                (Agri Mitra: Empowering Farmers through a Digital Marketplace - Puttannaiah Foundation & PES Mandya Initiative)
               </h3>
               <p className={`text-center ${getThemeClasses('text-gray-300', 'text-gray-700')}`}>
-                Focused on the entrepreneurial empowerment of farmers by developing Santhe—a web platform where farmers can register and sell their goods...
+                As part of the Finathon initiative, I contributed to the development of "Santhe," a robust web platform designed to directly connect farmers with a wider market, thereby fostering entrepreneurial empowerment within the agricultural sector. My role involved front-end development using ReactJS to create an intuitive interface for farmers to register their produce and manage their listings. Additionally, I worked on the back-end using NodeJS, ExpressJS, and MongoDB to build scalable and secure APIs for product catalog management, order processing, and facilitating transactions. This project aimed to address critical challenges in agricultural commerce by providing a transparent and efficient digital marketplace.
               </p>
               <div className="text-sm mt-2 flex flex-wrap gap-2 justify-center items-center">
                 <span className={`font-semibold ${getThemeClasses('text-gray-300', 'text-gray-700')}`}>Tech:</span>{' '}

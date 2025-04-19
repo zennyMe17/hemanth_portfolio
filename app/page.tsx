@@ -178,7 +178,10 @@ const HemanthSWebsite = () => {
                 (Ethicra: New Era of Ethical Hiring - Online AI Interview Platform)
               </h3>
               <p className={`text-center ${getThemeClasses('text-gray-300', 'text-gray-700')}`}>
-                Contributed to the development of an innovative online AI interview platform focused on ethical hiring practices. My responsibilities included enhancing the automated resume parsing and candidate screening modules using Natural Language Processing (NLP) and Deep Learning techniques. I also played a key role in designing and implementing the AI-driven interview analysis features, which provided comprehensive reports on candidate suitability based on their responses and behavioral cues. This involved working with large datasets and optimizing algorithms for efficiency and accuracy.
+                
+Contributed to the foundational aspects of an innovative online AI interview platform focused on ethical hiring practices. This included the development and implementation of secure user authentication using Firebase, alongside setting up and managing Firebase Storage for efficient handling of user data and uploaded files. Furthermore, my responsibilities extended to enhancing the automated resume parsing and candidate screening modules through the application of Natural Language Processing (NLP) and Deep Learning techniques. I also played a key role in designing and implementing the AI-driven interview analysis features, which provided comprehensive reports on candidate suitability based on their responses and behavioral cues. This involved working with large datasets and optimizing algorithms for efficiency and accuracy.
+
+
               </p>
               <div className="text-sm mt-2 flex flex-wrap gap-2 justify-center items-center">
                 <span className={`font-semibold ${getThemeClasses('text-gray-300', 'text-gray-700')}`}>Tech:</span>{' '}

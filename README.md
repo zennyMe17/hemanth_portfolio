@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hemanth's Portfolio
+
+A beautiful, responsive personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.  
+Showcases your projects, education, certifications, skills, and more in a single-page, modern layout.
+
+## Features
+
+- **Modern Design:** Clean, animated, and visually appealing user interface.
+- **Responsive:** Works perfectly on desktop, tablet, and mobile devices.
+- **Easy Customization:** All portfolio information is managed in a single data file.
+- **Social Links:** Integrated with LinkedIn, GitHub, LeetCode, and GeeksforGeeks.
+- **Sectioned Layout:** About Me, Education, Projects, Skills, Certifications, Extracurricular, and Contact.
+- **Dark/Light Friendly:** Designed with accessible color choices and contrast.
+
+## Demo
+
+[Portfolio Link](https://hemanth-ashy.vercel.app/p)
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/zennyMe17/hemanth_portfolio.git
+cd hemanth_portfolio
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  page.tsx            # Main portfolio page (edit layout/UI here)
+  favicon.ico
+  ...
+data/
+  portfolioData.ts    # Edit your name, skills, projects, etc. here!
+public/
+  leetcode.png        # Social logos
+  gfg.png
+  ...
+tailwind.config.js    # Tailwind CSS config
+postcss.config.js
+tsconfig.json         # TypeScript config
+...
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Edit your portfolio data:**  
+  Open `data/portfolioData.ts` and update all your details.  
+  - Name, contact info, education, skills, projects, certifications, and more.
+- **Add or update images:**  
+  Place your images (e.g., `leetcode.png`, `gfg.png`, etc.) in the `public/` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Change theme/colors:**  
+  Modify Tailwind CSS classes in `app/page.tsx` for custom color schemes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Deploy to [Vercel](https://vercel.com/) for best results (zero-config for Next.js):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your repository to GitHub.
+2. Go to [vercel.com](https://vercel.com/) and import your repo.
+3. Deploy!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Or, deploy anywhere that supports Next.js.
+
+## Credits
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- Inspired by modern developer portfolios.
+
+---
+
+Feel free to fork, use, and customize!  
+Give a ⭐ if you like it.

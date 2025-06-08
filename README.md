@@ -14,7 +14,7 @@ Showcases your projects, education, certifications, skills, and more in a single
 
 ## Demo
 
-[Portfolio Link](https://hemanth-ashy.vercel.app/p)
+[Portfolio Link](https://hemanth-ashy.vercel.app/)
 
 ## Getting Started
 

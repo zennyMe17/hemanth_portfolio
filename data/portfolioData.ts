@@ -27,7 +27,7 @@ export const portfolioData = {
       description: [
         "Designed and deployed a scalable SaaS web application delivering AI-powered mock interviews for job aspirants.",
         "Integrated Vapi AI for real-time, voice-based interviews and utilized AWS S3 for secure resume uploads, enhancing both interaction quality and data handling.",
-        "Used BERT for skill extraction from resumes and leveraged a generative language model to dynamically create interview questions based on identified skills.",
+        "Implemented AI-powered video integrity checks using TensorFlow.js and BlazeFace for live face detection,emotion analysis, and frame-by-frame video tracking",
         "Implemented user profile customization to support personalized assessments, increasing user retention by 60%.",
       ],
     },

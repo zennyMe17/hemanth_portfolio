@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-import Image from "next/image";
 import {
   FaPhone,
   FaEnvelope,
@@ -90,7 +89,7 @@ export default function Home() {
           <SectionTitle icon={<FaLaptopCode />}>About Me</SectionTitle>
           <p className="text-lg text-gray-700 leading-relaxed">
             I’m a Computer Science and Cybersecurity Engineering student passionate about problem-solving and secure software development.
-            Skilled in full-stack web technologies and algorithms, I focus on creating scalable, efficient, and reliable digital solutions.
+            Skilled in full-stack web technologies and algorithms, I focus on building efficient and reliable digital solutions.
           </p>
         </section>
 

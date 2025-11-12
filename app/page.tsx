@@ -2,16 +2,11 @@
 
 import Head from "next/head";
 import {
-  FaPhone,
   FaEnvelope,
   FaLinkedin,
   FaGithub,
-  FaGraduationCap,
-  FaCode,
-  FaCertificate,
   FaTools,
   FaLaptopCode,
-  FaBook,
   FaProjectDiagram,
   FaTrophy,
 } from "react-icons/fa";
@@ -19,7 +14,6 @@ import { SiLeetcode, SiCodechef } from "react-icons/si";
 
 export default function Home() {
   const contact = {
-    phone: "+91 9876543210",
     email: "yourname@example.com",
     linkedin: "https://www.linkedin.com/in/hemanth-s-b239b02b3/",
     github: "https://github.com/zennyMe17",
@@ -33,7 +27,7 @@ export default function Home() {
         <title>Hemanth S | Portfolio</title>
       </Head>
 
-      {/* Header Section */}
+      {/* ===== Header Section ===== */}
       <header className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-10 shadow-md text-center">
         <h1 className="text-4xl font-bold mb-2">Hemanth S</h1>
         <p className="text-lg">Computer Science & Cybersecurity Engineering @ MSRIT</p>
@@ -41,29 +35,49 @@ export default function Home() {
           Passionate about Competitive Programming, Cybersecurity, and Full Stack Development
         </p>
 
-        <div className="flex justify-center mt-4 flex-wrap gap-5 text-lg">
-          <a href={`tel:${contact.phone}`} className="flex items-center hover:text-gray-200">
-            <FaPhone className="mr-2" /> Contact
-          </a>
-          <a href={`mailto:${contact.email}`} className="flex items-center hover:text-gray-200">
+        <div className="flex justify-center mt-5 flex-wrap gap-5 text-lg">
+          <a
+            href={`mailto:${contact.email}`}
+            className="flex items-center hover:text-gray-200 transition-colors"
+          >
             <FaEnvelope className="mr-2" /> Email
           </a>
-          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-gray-200">
+          <a
+            href={contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:text-gray-200 transition-colors"
+          >
             <FaLinkedin className="mr-2" /> LinkedIn
           </a>
-          <a href={contact.github} target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-gray-200">
+          <a
+            href={contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:text-gray-200 transition-colors"
+          >
             <FaGithub className="mr-2" /> GitHub
           </a>
-          <a href={contact.leetcode} target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-gray-200">
+          <a
+            href={contact.leetcode}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:text-gray-200 transition-colors"
+          >
             <SiLeetcode className="mr-2" /> LeetCode
           </a>
-          <a href={contact.codechef} target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-gray-200">
+          <a
+            href={contact.codechef}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:text-gray-200 transition-colors"
+          >
             <SiCodechef className="mr-2" /> CodeChef
           </a>
         </div>
       </header>
 
-      {/* About Section */}
+      {/* ===== About Section ===== */}
       <section className="max-w-4xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-indigo-700 mb-4 flex items-center">
           <FaLaptopCode className="mr-2" /> About
@@ -76,7 +90,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Projects Section */}
+      {/* ===== Projects Section ===== */}
       <section className="max-w-4xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-indigo-700 mb-4 flex items-center">
           <FaProjectDiagram className="mr-2" /> Projects
@@ -86,7 +100,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold">Ethical Hiring</h3>
             <p className="text-gray-700">
               A secure recruitment platform ensuring fairness in hiring through encrypted test data
-              and AI-powered plagiarism detection, designed to promote transparency in candidate evaluation.
+              and AI-powered plagiarism detection — designed to promote transparency in candidate evaluation.
             </p>
           </div>
 
@@ -100,19 +114,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Achievements Section */}
+      {/* ===== Achievements Section ===== */}
       <section className="max-w-4xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-indigo-700 mb-4 flex items-center">
           <FaTrophy className="mr-2" /> Achievements
         </h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Strong foundation in Data Structures and Algorithms with 600+ problems solved</li>
-          <li>Consistent performer in coding contests and hackathons</li>
-          <li>Active contributor to open-source and collaborative projects</li>
+          <li>Active participant in coding contests and hackathons</li>
+          <li>Contributor to open-source and collaborative projects</li>
         </ul>
       </section>
 
-      {/* Skills Section */}
+      {/* ===== Skills Section ===== */}
       <section className="max-w-4xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-indigo-700 mb-4 flex items-center">
           <FaTools className="mr-2" /> Skills
@@ -139,7 +153,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* ===== Footer ===== */}
       <footer className="bg-gray-100 text-center py-6 text-gray-600 text-sm border-t">
         © {new Date().getFullYear()} Hemanth S. All rights reserved.
       </footer>

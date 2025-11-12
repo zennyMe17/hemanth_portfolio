@@ -16,7 +16,7 @@ import {
   FaProjectDiagram,
   FaTrophy,
 } from "react-icons/fa";
-
+import { SiLeetcode, SiCodechef } from "react-icons/si";
 import { portfolioData } from "../data/portfolioData";
 
 // Section Title Component
@@ -80,6 +80,12 @@ export default function Home() {
               <a href={contact.github} target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-700 hover:text-blue-900">
                 <FaGithub className="mr-2" /> GitHub
               </a>
+              <a href={contact.leetcode} target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-800">
+                <SiLeetcode className="mr-2" /> LeetCode
+              </a>
+              <a href={contact.codechef} target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-600 hover:text-purple-800">
+                <SiCodechef className="mr-2" /> CodeChef
+              </a>
             </div>
           </div>
         </header>
@@ -89,7 +95,7 @@ export default function Home() {
           <SectionTitle icon={<FaLaptopCode />}>About Me</SectionTitle>
           <p className="text-lg text-gray-700 leading-relaxed">
             I’m a Computer Science and Cybersecurity Engineering student passionate about problem-solving and secure software development.
-            Skilled in full-stack web technologies and algorithms, I focus on building efficient and reliable digital solutions.
+            Skilled in full-stack web technologies and algorithms, I focus on building efficient, scalable, and reliable digital solutions.
           </p>
         </section>
 
@@ -105,7 +111,7 @@ export default function Home() {
 
         {/* Projects */}
         <section className="bg-white rounded-xl shadow-lg p-8 mb-10">
-          <SectionTitle icon={<FaProjectDiagram />}>Projects</SectionTitle>
+          <SectionTitle icon={<FaProjectDiagram />}>Highlighted Projects</SectionTitle>
           <div className="grid gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-all">
@@ -153,6 +159,7 @@ export default function Home() {
         <section className="bg-white rounded-xl shadow-lg p-8 mb-10">
           <SectionTitle icon={<FaTrophy />}>Achievements</SectionTitle>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <li>Solved 600+ Data Structures and Algorithms problems across platforms.</li>
             {extracurricular.map((item, i) => (
               <li key={i}>{item.title}</li>
             ))}

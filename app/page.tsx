@@ -249,7 +249,7 @@ export default function Home() {
 
       </main>
 
-      {/* ===== Footer ===== */}
+      {/* ==== Footer ==== */}
       <footer className="bg-white border-t border-slate-200 py-10 text-center text-slate-500">
         <p>© {new Date().getFullYear()} Hemanth S. Built with Next.js & Tailwind.</p>
       </footer>

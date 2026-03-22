@@ -14,15 +14,25 @@ import {
   FaServer,
   FaShieldAlt,
 } from "react-icons/fa";
-import { SiLeetcode, SiCodechef, SiNextdotjs, SiReact, SiNodedotjs, SiMongodb, SiDocker, SiCplusplus, SiPython } from "react-icons/si";
+import {
+  SiLeetcode,
+  SiCodechef,
+  SiNextdotjs,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiDocker,
+  SiCplusplus,
+  SiPython,
+} from "react-icons/si";
 
 export default function Home() {
   const contact = {
     email: "gowda.hemanth.1718@gmail.com",
+    linkedin: "https://www.linkedin.com/in/hemanth-s-b239b02b3/",
     github: "https://github.com/zennyMe17",
     leetcode: "https://leetcode.com/u/CuteItachi1718/",
     codechef: "https://www.codechef.com/users/uchiha_hemanth",
-    phone: "+91-7022158519",
   };
 
   return (
@@ -55,6 +65,9 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <a href={contact.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all hover:-translate-y-1 shadow-md flex items-center gap-2">
               <FaGithub className="text-xl" /> GitHub
+            </a>
+            <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all hover:-translate-y-1 shadow-md flex items-center gap-2">
+              <FaLinkedin className="text-xl" /> LinkedIn
             </a>
             <a href={contact.leetcode} target="_blank" rel="noopener noreferrer" className="p-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-all hover:-translate-y-1 shadow-md flex items-center gap-2">
               <SiLeetcode className="text-xl" /> LeetCode
@@ -96,6 +109,21 @@ export default function Home() {
               </ul>
             </div>
 
+          </div>
+        </section>
+
+        {/* ===== Education Section ===== */}
+        <section>
+          <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+            <FaGraduationCap className="text-indigo-600" /> Education
+          </h2>
+          <div className="space-y-6 border-l-2 border-indigo-100 ml-3 pl-6">
+            <div className="relative">
+              <div className="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-white bg-indigo-600"></div>
+              <h3 className="text-xl font-bold text-slate-900">B.E - Computer Science & Cyber Security</h3>
+              <p className="text-slate-600 font-medium">M S Ramaiah Institute of Technology <span className="text-slate-500 font-normal text-sm ml-2">• 2022 - 2026</span></p>
+              <p className="text-indigo-600 font-semibold mt-1">CGPA: 9.02</p>
+            </div>
           </div>
         </section>
 
@@ -194,10 +222,19 @@ export default function Home() {
             <FaCode className="text-indigo-600" /> Technical Skills
           </h2>
           <div className="flex flex-wrap gap-3">
+            {/* Icons mapping */}
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiCplusplus className="text-blue-600 text-lg" /> C++</span>
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiPython className="text-yellow-500 text-lg" /> Python</span>
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiReact className="text-blue-400 text-lg" /> React.js</span>
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiNextdotjs className="text-black text-lg" /> Next.js</span>
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiNodedotjs className="text-green-600 text-lg" /> Node.js</span>
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiMongodb className="text-green-500 text-lg" /> MongoDB</span>
+            <span className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-indigo-400 hover:text-indigo-700 transition-colors cursor-default shadow-sm"><SiDocker className="text-blue-500 text-lg" /> Docker</span>
+            
+            {/* Text only mapping */}
             {[
-              "C++", "C", "Python", "JavaScript", "SQL",
-              "React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "REST APIs",
-              "Docker", "Linux/Unix", "CI/CD", "GitHub Actions",
+              "C", "JavaScript", "SQL", "Express.js", "REST APIs",
+              "Linux/Unix", "CI/CD", "GitHub Actions",
               "Machine Learning", "System Design", "Cybersecurity", "Data Structures"
             ].map((skill) => (
               <span
